@@ -12,7 +12,7 @@ let cpuScore = 0;
 
 function play(playerSelection, cpuSelection) {
     if (playerSelection === cpuSelection ) {
-        return "draw"
+        return "It's a tie!"
     } 
     if (
         (playerSelection === 'rock' && cpuSelection === 'scissors') ||
@@ -21,7 +21,7 @@ function play(playerSelection, cpuSelection) {
         )
      {
         playerScore++;
-        return "Player wins"
+        return "Player wins!!!"
 
     }
     if (
@@ -30,7 +30,7 @@ function play(playerSelection, cpuSelection) {
         (cpuSelection === 'scissors' && playerSelection === 'paper')
     ) {
         cpuScore++;
-        return "CPU wins";
+        return "CPU wins!!!";
 
     }
 }
