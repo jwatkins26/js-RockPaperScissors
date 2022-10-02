@@ -35,8 +35,15 @@ function play(playerSelection, cpuSelection) {
     }
 }
 
-const cpuSelection = getComputerChoice();
-const playerSelection = prompt("Rock, Paper, Scissors").toLowerCase();
+
+function game () {
+    for (let playRound = 1; playRound <= 5; playRound++){
+        const cpuSelection = getComputerChoice();
+        const playerSelection = prompt("Rock, Paper, Scissors").toLowerCase();
+        console.log(play(playerSelection, cpuSelection));
+    }}
+
+game();
 
 
-console.log(play(playerSelection, cpuSelection))
+/*console.log(play(playerSelection, cpuSelection))*/ 
