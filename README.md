@@ -1,2 +1,2 @@
 # js-RockPaperScissors
-Basic rock paper scissors game in Javascript.
+Rock Paper Scissors game played in the console. Best of 5 wins.
