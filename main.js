@@ -35,6 +35,7 @@ function play(playerSelection, cpuSelection) {
     }
 }
 
+
 const cpuSelection = getComputerChoice();
 const playerSelection = prompt("Rock, Paper, Scissors").toLowerCase();
 
