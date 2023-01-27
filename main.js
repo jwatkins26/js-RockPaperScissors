@@ -1,3 +1,8 @@
+/*
+const cpuSelection = getComputerChoice();
+const playerSelection = getPlayerChoice();
+*/
+
 
 function getComputerChoice() {
     const hand = ['rock', 'paper', 'scissors']
@@ -5,12 +10,12 @@ function getComputerChoice() {
     return hand[choice];
 
 }
-
-
-let playerScore = 0;
-let cpuScore = 0;
-
-function play(playerSelection, cpuSelection) {
+function playRound(playerSelection, cpuSelection) {
+    let playerScore = 0;
+    let cpuScore = 0;
+    
+   
+   
     if (playerSelection === cpuSelection ) {
         return "draw"
     } 
@@ -33,11 +38,25 @@ function play(playerSelection, cpuSelection) {
         return "CPU wins";
 
     }
+
+    
 }
 
+// Buttons
+const buttons = document.querySelectorAll("button");
+buttons.forEach((button) => { 
+    button.addEventListener('click', () => {
+       const playerSelection = button.className; 
+        const cpuSelection = getComputerChoice();
+        console.log(playRound(playerSelection, cpuSelection));
 
-const cpuSelection = getComputerChoice();
-const playerSelection = prompt("Rock, Paper, Scissors").toLowerCase();
+    })
+    
+
+})
 
 
-console.log(play(playerSelection, cpuSelection))
+
+    
+
+
